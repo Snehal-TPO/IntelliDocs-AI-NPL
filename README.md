@@ -66,6 +66,16 @@ Optional frontend environment override:
 VITE_API_BASE_URL=http://localhost:8000/api
 ```
 
+## GitHub Pages
+
+The frontend can be deployed to GitHub Pages from the `main` branch using the included workflow:
+
+```text
+https://snehal-tpo.github.io/IntelliDocs-AI-NPL/
+```
+
+GitHub Pages only hosts the static React frontend. The FastAPI backend still needs to run locally or be deployed to a backend host such as Render, Railway, Fly.io, AWS, or Azure. Set `VITE_API_BASE_URL` during the frontend build if the backend is deployed somewhere other than `http://localhost:8000/api`.
+
 ## API Endpoints
 
 - `POST /api/documents/upload`
